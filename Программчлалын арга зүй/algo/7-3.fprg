@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-20 12:34:21 PM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjA7MTI6MDA6MTIgUE07MjQ4Ng=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjA7MTI6MTI6MjUgUE07MTtsYWIxNztMQUItMTc7MjAyMi0xMC0wNjsxMTo1ODoxNyBBTTs1LTQuZnByZzs1Mzc0"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjA7MTI6MzQ6MjEgUE07MjsyNjAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, too, k" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="too" expression="n"/>
+            <assign variable="s" expression="0"/>
+            <while expression="n!=0">
+                <assign variable="k" expression="n%2"/>
+                <assign variable="s" expression="s*10+k"/>
+                <assign variable="n" expression="n/2"/>
+            </while>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

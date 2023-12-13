@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 11:47:35 AM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTE6MjU6MjMgQU07MjAyNw=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTE6NDc6MzUgQU07MTsyMTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age, huuhed, zaluu, Hijeel, Hogshin" type="Integer" array="False" size=""/>
+            <input variable="age"/>
+            <if expression="age&lt;=18">
+                <then>
+                    <output expression="&quot;huuhed&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="age&lt;=40">
+                        <then>
+                            <output expression="&quot;zaluu&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="age&lt;=60">
+                                <then>
+                                    <output expression="&quot;hijeel&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Hugshin&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

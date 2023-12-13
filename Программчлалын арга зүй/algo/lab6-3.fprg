@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="st310b"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-17 01:14:16 AM"/>
+        <attribute name="created" value="c3QzMTBiO0RFU0tUT1AtUVRPM0ZDNzsyMDIyLTEwLTE3OzAxOjExOjAzIEFNOzI3OTc="/>
+        <attribute name="edited" value="c3QzMTBiO0RFU0tUT1AtUVRPM0ZDNzsyMDIyLTEwLTE3OzAxOjExOjA3IEFNOzE7bGFiO0xBQi0xMDY7MjAyMi0xMC0xMzsxMDo0NjozNyBBTTtsYWI2LTMuZnByZzs1OTI0"/>
+        <attribute name="edited" value="c3QzMTBiO0RFU0tUT1AtUVRPM0ZDNzsyMDIyLTEwLTE3OzAxOjE0OjE2IEFNOzU7MjkxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prime, n, i, count" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hed hurtel bodoh ve:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="prime" expression="1"/>
+            <while expression="prime&lt;=n">
+                <assign variable="count" expression="0"/>
+                <assign variable="i" expression="2"/>
+                <while expression="i&lt;prime">
+                    <if expression="prime%i==0">
+                        <then>
+                            <assign variable="count" expression="count+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="i" expression="i+1"/>
+                </while>
+                <if expression="count==0 &amp;&amp; prime!=1">
+                    <then>
+                        <output expression="prime" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="prime" expression="prime+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

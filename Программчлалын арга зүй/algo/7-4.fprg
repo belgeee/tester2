@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-03 12:10:00 AM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMDI7MTE6NDY6MzcgQU07MjQ4OA=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMDM7MTI6MTA6MDAgQU07NTsyNTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, s, j, m, k" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="m" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="s" expression="0"/>
+                <assign variable="j" expression="1"/>
+                <while expression="j&lt;i">
+                    <if expression="i%j==0">
+                        <then>
+                            <assign variable="s" expression="s+j"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="j" expression="j+1"/>
+                    <if expression="s&gt;m">
+                        <then>
+                            <assign variable="m" expression="s"/>
+                            <assign variable="k" expression="i"/>
+                        </then>
+                        <else/>
+                    </if>
+                </while>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="k" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

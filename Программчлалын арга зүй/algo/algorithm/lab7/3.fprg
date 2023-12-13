@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-24 08:24:45 AM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTIzOzExOjUzOjAwIFBNOzI5NTU="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTI0OzA4OjI0OjQ1IEFNOzQ7MzA2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, m, p, l" type="Integer" array="False" size=""/>
+            <declare name="c, b" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="m" expression="0"/>
+            <assign variable="p" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="a" expression="n%2"/>
+                <assign variable="n" expression="n-a"/>
+                <assign variable="n" expression="n/2"/>
+                <assign variable="m" expression="(m*10)+a"/>
+                <assign variable="l" expression="m"/>
+                <if expression="l==0">
+                    <then>
+                        <assign variable="p" expression="p+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="l" expression="m*10^p"/>
+            </while>
+            <while expression="l&gt;0">
+                <assign variable="c" expression="l%10"/>
+                <assign variable="b" expression="(b*10)+c"/>
+                <assign variable="l" expression="l/10"/>
+            </while>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

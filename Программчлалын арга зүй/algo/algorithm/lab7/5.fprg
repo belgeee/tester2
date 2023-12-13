@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-23 09:31:30 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTI0OzEyOjI2OjI5IEFNOzI5NTM="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTIzOzA5OjMxOjMwIFBNOzc7MzA3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, i, k, a" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <for variable="i" start="1" end="m" direction="inc" step="1">
+                <assign variable="k" expression="m-(i*i)"/>
+                <for variable="a" start="1" end="k" direction="inc" step="1">
+                    <if expression="k-(a*a)==0">
+                        <then>
+                            <output expression="a" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

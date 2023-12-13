@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-20 12:34:25 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTE6NTg6MTcgQU07MjAyOA=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTI6Mjk6NDEgUE07NDsyMTUw"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjA7MTI6MzQ6MjUgUE07MTsyNjA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, s, k, too" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="too" expression="n"/>
+            <while expression="too!=0">
+                <assign variable="k" expression="n%10"/>
+                <assign variable="s" expression="s*10+k"/>
+                <assign variable="too" expression="too/10"/>
+            </while>
+            <if expression="n==s">
+                <then>
+                    <output expression="&quot;palindrom&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;nope&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

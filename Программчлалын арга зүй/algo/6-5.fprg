@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-20 11:10:35 AM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMTk7MDk6Mjg6NTQgUE07MjUxNg=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjA7MTE6MTA6MzUgQU07MjsyNTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l, m, n, c, s, r, p" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="m" expression="n"/>
+            <while expression="m&gt;0">
+                <assign variable="r" expression="m%10"/>
+                <assign variable="s" expression="s+(r*r*r)"/>
+                <assign variable="m" expression="m/10"/>
+            </while>
+            <if expression="n==s">
+                <then>
+                    <output expression="&quot;armstong&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

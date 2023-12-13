@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 10:45:00 AM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMTA7MTA6MzM6NDMgQU07MjQ3OQ=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMTA7MTA6NDU6MDAgQU07MTsyNTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="True" size="100"/>
+            <for variable="i" start="0" end="99" direction="inc" step="1">
+                <assign variable="a[i]" expression="i*2"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

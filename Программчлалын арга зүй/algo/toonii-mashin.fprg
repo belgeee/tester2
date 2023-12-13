@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 12:07:37 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTE6NTg6NDMgQU07MjAzNQ=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTI6MDc6MzcgUE07MTsyMTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, hariu" type="Real" array="False" size=""/>
+            <declare name="operator" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="operator"/>
+            <input variable="b"/>
+            <if expression="operator=&quot;+&quot;">
+                <then>
+                    <assign variable="hariu" expression="a+b"/>
+                </then>
+                <else>
+                    <if expression="operator=&quot;-&quot;">
+                        <then>
+                            <assign variable="hariu" expression="a-b"/>
+                        </then>
+                        <else>
+                            <if expression="operator=&quot;/&quot;">
+                                <then>
+                                    <assign variable="hariu" expression="a/b"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="hariu" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

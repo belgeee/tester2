@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-17 12:15:44 PM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMTc7MTA6NDY6MjAgQU07MjQ4NQ=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMTc7MTI6MTU6NDQgUE07MjsyNjEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, k, s, i, e, f, g, h" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="m"/>
+            <input variable="k"/>
+            <declare name="A" type="Integer" array="True" size="n"/>
+            <declare name="B" type="Integer" array="True" size="m"/>
+            <declare name="C" type="Integer" array="True" size="k"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="A[i]" expression="random(100)"/>
+            </for>
+            <for variable="i" start="0" end="m-1" direction="inc" step="1">
+                <assign variable="B[i]" expression="random(100)"/>
+            </for>
+            <for variable="i" start="0" end="k-1" direction="inc" step="1">
+                <assign variable="C[i]" expression="random(100)"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="s" expression="A[i]"/>
+                <for variable="g" start="0" end="m-1" direction="inc" step="1">
+                    <assign variable="e" expression="B[g]"/>
+                    <for variable="h" start="0" end="k-1" direction="inc" step="1">
+                        <assign variable="f" expression="C[h]"/>
+                        <if expression="s==f &amp;&amp; s==e &amp;&amp; e==f">
+                            <then>
+                                <output expression="e" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

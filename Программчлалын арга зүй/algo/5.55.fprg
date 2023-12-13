@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-13 12:01:19 AM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMTI7MTE6NDY6MDMgUE07MjQ5Ng=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMTM7MTI6MDE6MTkgQU07MTsyNTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, n, r, s, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="s" expression="0"/>
+            <input variable="m"/>
+            <input variable="n"/>
+            <while expression="i&lt;=n">
+                <while expression="i !=0">
+                    <assign variable="r" expression="i%10"/>
+                    <assign variable="s" expression="s+r"/>
+                    <assign variable="i" expression="i/10"/>
+                </while>
+                <if expression="s==m">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

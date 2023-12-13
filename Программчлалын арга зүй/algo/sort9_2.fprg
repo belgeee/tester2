@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-01 11:06:12 AM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMTY7MTE6MDE6MTUgQU07MjQ4MA=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTItMDE7MTE6MDY6MTIgQU07MTE7MjYzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, key, p, n, temp, m, d, s" type="Integer" array="False" size=""/>
+            <output expression="&quot;bubble sort heden too ve?&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="A" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="A[i]" expression="random(100)"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="0" end="n-i-2" direction="inc" step="1">
+                    <if expression="A[j]&lt;A[j+1]">
+                        <then>
+                            <assign variable="temp" expression="A[j]"/>
+                            <assign variable="A[j]" expression="A[j+1]"/>
+                            <assign variable="A[j+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <assign variable="m" expression="0"/>
+            <output expression="&quot;toogoo oruul&quot;" newline="True"/>
+            <input variable="key"/>
+            <assign variable="s" expression="0"/>
+            <for variable="p" start="0" end="n-1" direction="inc" step="1">
+                <output expression="A[p]" newline="True"/>
+                <assign variable="d" expression="A[p]-key"/>
+                <if expression="d&lt;m">
+                    <then/>
+                    <else>
+                        <assign variable="s" expression="A[p]"/>
+                    </else>
+                </if>
+                <assign variable="d" expression="m"/>
+            </for>
+            <output expression="&quot;oirhon too&quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

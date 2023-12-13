@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-16 07:39:01 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTE2OzA3OjI5OjQzIFBNOzI5NzI="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTE2OzA3OjM5OjAxIFBNOzE7MzA3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, b, c, d" type="Integer" array="False" size=""/>
+            <for variable="n" start="1000" end="9999" direction="inc" step="1">
+                <assign variable="a" expression="n/1000"/>
+                <assign variable="b" expression="(n/100)%10"/>
+                <assign variable="c" expression="(n%100)/10"/>
+                <assign variable="d" expression="n%10"/>
+                <assign variable="a" expression="a+b"/>
+                <assign variable="c" expression="c+d"/>
+                <if expression="a==c">
+                    <then>
+                        <output expression="n" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-09 03:05:43 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzAyOjMwOjA3IFBNOzI5NjE="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzAzOjA1OjQzIFBNOzE7MzA3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, n, i, s, r" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="r" expression="x"/>
+            <assign variable="s" expression="i*x"/>
+            <while expression="i&lt;n">
+                <assign variable="s" expression="x*s"/>
+                <assign variable="r" expression="r+s"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

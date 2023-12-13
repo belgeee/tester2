@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-06 12:29:18 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTE6NDM6MjkgQU07MjAyNQ=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTI6Mjk6MTggUE07MTsyMTUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, k, l, m" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1000"/>
+            <while expression="n&lt;10000">
+                <assign variable="m" expression="n%10"/>
+                <assign variable="l" expression="(n/10)%10"/>
+                <assign variable="k" expression="(n/100)%10"/>
+                <assign variable="a" expression="n/1000"/>
+                <if expression="a+k==l+m">
+                    <then>
+                        <output expression="n" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="n" expression="n+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

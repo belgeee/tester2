@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Swift 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 08:03:18 AM"/>
+        <attribute name="created" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0xMDswNzo1OTo1NyBBTTszMDA0"/>
+        <attribute name="edited" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0xMDswODowMzoxOCBBTTsxOzMwOTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="True" size="100"/>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="n" expression="100"/>
+            <while expression="i&lt;100">
+                <assign variable="A[i]" expression="n"/>
+                <assign variable="n" expression="n-1"/>
+                <output expression="n" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-24 08:49:15 AM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTIzOzEwOjUzOjI3IFBNOzI5NjM="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTI0OzA4OjQ5OjE1IEFNOzIyOzMxMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, l, k, s, a, b, c, v, t, e" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="m"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="t" expression="0"/>
+            <assign variable="e" expression="m"/>
+            <while expression="n&gt;0 and m&gt;0">
+                <assign variable="k" expression="n%10"/>
+                <assign variable="l" expression="e%10"/>
+                <if expression="l==k">
+                    <then>
+                        <assign variable="v" expression="e%10"/>
+                        <assign variable="e" expression="e/10"/>
+                        <assign variable="n" expression="n/10"/>
+                        <assign variable="t" expression="(t*10)+v"/>
+                    </then>
+                    <else>
+                        <assign variable="n" expression="n/10"/>
+                    </else>
+                </if>
+            </while>
+            <assign variable="b" expression="0"/>
+            <assign variable="c" expression="t"/>
+            <while expression="c&gt;0">
+                <assign variable="a" expression="c%10"/>
+                <assign variable="b" expression="(b*10)+a"/>
+                <assign variable="c" expression="c/10"/>
+            </while>
+            <if expression="b==m">
+                <then>
+                    <output expression="&quot;n toond m too bna&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;bhgui&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

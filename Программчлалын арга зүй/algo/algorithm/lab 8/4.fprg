@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-30 09:29:31 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTMwOzA5OjI0OjUwIFBNOzI5NjM="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTMwOzA5OjI5OjMxIFBNOzE7MzA3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="True" size="101"/>
+            <declare name="s, i, d" type="Real" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="100" direction="inc" step="1">
+                <assign variable="n[i]" expression="random(100)"/>
+                <assign variable="s" expression="s+n[i]"/>
+            </for>
+            <assign variable="d" expression="s"/>
+            <assign variable="d" expression="d/100"/>
+            <output expression="d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

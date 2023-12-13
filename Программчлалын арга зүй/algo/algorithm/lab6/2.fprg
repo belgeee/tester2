@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-17 09:09:46 AM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTE2OzEwOjU5OjMxIEFNOzI5NTE="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTE3OzA5OjA5OjQ2IEFNOzg7MzA3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, v, m, l" type="Integer" array="False" size=""/>
+            <for variable="n" start="10" end="99" direction="inc" step="1">
+                <for variable="v" start="10" end="99" direction="inc" step="1">
+                    <assign variable="l" expression="n"/>
+                    <assign variable="l" expression="(l*100)+v"/>
+                    <assign variable="m" expression="n*v"/>
+                    <if expression="l%m==0">
+                        <then>
+                            <output expression="(n*100)+v" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

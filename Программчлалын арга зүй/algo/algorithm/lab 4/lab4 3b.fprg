@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-09 02:16:45 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzAyOjExOjE3IFBNOzI5NjE="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzAyOjExOjQ5IFBNOzE7Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzEwOjQ1OjA2IEFNO2xhYjQgMjEuZnByZzs3MTA1"/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzAyOjE2OjQ1IFBNOzE7MzA3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, i, r" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="s" expression="1/2"/>
+            <assign variable="r" expression="1/2"/>
+            <while expression="i&lt;n">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="s" expression="s*(1/2)"/>
+                <assign variable="r" expression="r+s"/>
+            </while>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

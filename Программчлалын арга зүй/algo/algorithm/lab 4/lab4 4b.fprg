@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-09 10:30:05 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzEyOjUyOjI3IFBNOzI5Njg="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzEyOjU1OjM3IFBNOzE7Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzEwOjQ1OjA2IEFNO2xhYjQgMjEuZnByZzs3MTEx"/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzEwOjMwOjA1IFBNOzQ5OzMxMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, a, k, n, x" type="Integer" array="False" size=""/>
+            <declare name="s" type="Real" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="n"/>
+            <assign variable="a" expression="1"/>
+            <assign variable="k" expression="1"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="a" expression="a*x"/>
+                <assign variable="k" expression="k*i"/>
+                <assign variable="s" expression="s+a/k"/>
+            </for>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

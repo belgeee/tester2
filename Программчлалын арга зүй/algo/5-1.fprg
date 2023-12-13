@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-06 12:29:00 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTE6MTQ6NDMgQU07MjAxOQ=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTI6Mjk6MDAgUE07MTsyMTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="y, x, s" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="10"/>
+            <while expression="9&lt;s &amp;&amp; s&lt;100">
+                <assign variable="x" expression="s%10"/>
+                <assign variable="y" expression="s/10"/>
+                <if expression="x==y">
+                    <then>
+                        <output expression="s" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="s" expression="s+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

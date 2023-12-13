@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 12:16:21 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTI6MTI6NTAgUE07MjAzOQ=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTI6MTY6MjEgUE07MTsyMTQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum, i, n" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <input variable="n"/>
+            <while expression="i&lt;=n">
+                <assign variable="sum" expression="sum+1/i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

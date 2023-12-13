@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-01 11:02:08 AM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMTY7MTE6MDE6MTUgQU07MjQ4MA=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTItMDE7MTE6MDI6MDggQU07MTQ7MjYzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, k, p, n, temp, m, q, s" type="Integer" array="False" size=""/>
+            <output expression="&quot;bubble sort heden too ve?&quot;" newline="True"/>
+            <input variable="n"/>
+            <input variable="m"/>
+            <declare name="A" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="A[i]" expression="random(100)"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="0" end="n-i-2" direction="inc" step="1">
+                    <if expression="A[j]&lt;A[j+1]">
+                        <then>
+                            <assign variable="temp" expression="A[j]"/>
+                            <assign variable="A[j]" expression="A[j+1]"/>
+                            <assign variable="A[j+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <declare name="B" type="Integer" array="True" size="m"/>
+            <assign variable="k" expression="m+n"/>
+            <for variable="i" start="0" end="m-1" direction="inc" step="1">
+                <assign variable="B[i]" expression="random(100)"/>
+            </for>
+            <for variable="i" start="0" end="m-1" direction="inc" step="1">
+                <for variable="j" start="0" end="m-i-2" direction="inc" step="1">
+                    <if expression="B[j]&lt;B[j+1]">
+                        <then>
+                            <assign variable="temp" expression="B[j]"/>
+                            <assign variable="B[j]" expression="B[j+1]"/>
+                            <assign variable="B[j+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <declare name="C" type="Integer" array="True" size="k"/>
+            <assign variable="q" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="C[i]" expression="A[q]"/>
+                <assign variable="q" expression="q+1"/>
+            </for>
+            <for variable="i" start="n" end="m+n-1" direction="inc" step="1">
+                <assign variable="C[i]" expression="A[s]"/>
+                <assign variable="s" expression="s+1"/>
+            </for>
+            <for variable="i" start="0" end="k-1" direction="inc" step="1">
+                <for variable="j" start="0" end="k-i-2" direction="inc" step="1">
+                    <if expression="C[j]&lt;C[j+1]">
+                        <then>
+                            <assign variable="temp" expression="C[j]"/>
+                            <assign variable="C[j]" expression="C[j+1]"/>
+                            <assign variable="C[j+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="k-1" direction="inc" step="1">
+                <output expression="C[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

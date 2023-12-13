@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 12:12:45 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTI6MDg6MDYgUE07MjA0NQ=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTI6MTI6NDUgUE07MTsyMTUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="count" expression="0"/>
+            <while expression="n!=0">
+                <assign variable="n" expression="n/10"/>
+                <assign variable="count" expression="count+1"/>
+            </while>
+            <output expression="count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

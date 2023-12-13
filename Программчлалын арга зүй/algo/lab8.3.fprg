@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Swift 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-09 10:55:38 PM"/>
+        <attribute name="created" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0wOTsxMDowODoxNyBQTTszMDEx"/>
+        <attribute name="edited" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0wOTsxMDo1NTozOCBQTTszOzMxMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="True" size="100"/>
+            <declare name="s, i, n" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <assign variable="n" expression="99"/>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <assign variable="A[i]" expression="random(n)"/>
+            </for>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <if expression="A[i]%2==0">
+                    <then>
+                        <assign variable="s" expression="s+A[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

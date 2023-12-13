@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-03 11:21:42 AM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjA7MTE6NDU6MTMgQU07MjQ4MA=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMDM7MTE6MjE6NDIgQU07NTsyNTkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="M, N, a, b, c, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;tsipriig ni hayh too&quot;" newline="True"/>
+            <input variable="N"/>
+            <output expression="&quot;toogoo oruul&quot;" newline="True"/>
+            <input variable="M"/>
+            <while expression="N&gt;0">
+                <assign variable="a" expression="N%10"/>
+                <if expression="M&gt;0">
+                    <then>
+                        <assign variable="b" expression="M%10"/>
+                        <if expression="a==b">
+                            <then>
+                                <assign variable="M" expression="M/10"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="N" expression="N/10"/>
+            </while>
+            <if expression="M==0">
+                <then>
+                    <output expression="&quot;yes&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

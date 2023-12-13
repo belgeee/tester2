@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-06 12:29:08 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTE6MjM6MDAgQU07MjAxMg=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMTAtMDY7MTI6Mjk6MDggUE07MTsyMTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k, s, a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="11"/>
+            <while expression="a&lt;100">
+                <if expression="a%10==0">
+                    <then/>
+                    <else>
+                        <assign variable="s" expression="a%10"/>
+                        <assign variable="k" expression="a/10"/>
+                        <if expression="a%s==0 &amp;&amp; a%k==0">
+                            <then>
+                                <output expression="a" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="a" expression="a+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

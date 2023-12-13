@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-03 11:05:20 AM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLTBJUFNLQzI7MjAyMi0xMC0yNzsxMDo1NToyNCBBTTsyNjEw"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLTBJUFNLQzI7MjAyMi0xMC0yNzsxMTowMzoxOSBBTTsxOzI3MTY="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMDM7MTE6MDU6MjAgQU07MjsyNTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, d, r, i" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Enter number in decimal&quot;" newline="True"/>
+            <input variable="d"/>
+            <while expression="d&gt;0">
+                <assign variable="r" expression="d%2"/>
+                <assign variable="b" expression="b+i*r"/>
+                <assign variable="d" expression="d/2"/>
+                <assign variable="i" expression="i*10"/>
+            </while>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

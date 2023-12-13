@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="st310b"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-10 03:00:12 AM"/>
+        <attribute name="created" value="c3QzMTBiO0RFU0tUT1AtVU8zUzhSTzsyMDIyLTEwLTEwOzAyOjA0OjA2IEFNOzI4MjQ="/>
+        <attribute name="edited" value="c3QzMTBiO0RFU0tUT1AtVU8zUzhSTzsyMDIyLTEwLTEwOzAzOjAwOjEyIEFNOzk7MjkzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="too, sum, remainder, uildel, n" type="Integer" array="False" size=""/>
+            <assign variable="uildel" expression="0"/>
+            <output expression="&quot;Enter the number:&quot;" newline="True"/>
+            <input variable="too"/>
+            <if expression="100&lt;=too &amp;&amp; too&lt;=999">
+                <then>
+                    <while expression="too&gt;0">
+                        <assign variable="n" expression="too"/>
+                        <assign variable="sum" expression="0"/>
+                        <while expression="n&gt;0">
+                            <assign variable="remainder" expression="n%10"/>
+                            <assign variable="sum" expression="sum+remainder"/>
+                            <assign variable="n" expression="n/10"/>
+                        </while>
+                        <assign variable="too" expression="too-sum"/>
+                        <assign variable="uildel" expression="uildel+1"/>
+                    </while>
+                    <output expression="uildel" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

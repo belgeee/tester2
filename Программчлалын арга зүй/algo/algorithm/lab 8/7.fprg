@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-31 10:18:56 AM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTMxOzA5OjI3OjE0IEFNOzI5NTI="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTMxOzEwOjE4OjU2IEFNOzQ7MzA2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, x, b, s" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <assign variable="x" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="a[i]" expression="random(n)"/>
+            </for>
+            <while expression="x&lt;=n-1">
+                <assign variable="b" expression="x"/>
+                <while expression="b&lt;=n-1">
+                    <if expression="a[b]==a[x]">
+                        <then>
+                            <assign variable="s" expression="s+1"/>
+                            <if expression="s&gt;=2">
+                                <then>
+                                    <output expression="a[b]" newline="True"/>
+                                    <assign variable="b" expression="n"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="b" expression="b+1"/>
+                </while>
+                <assign variable="s" expression="0"/>
+                <assign variable="x" expression="x+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

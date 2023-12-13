@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-06 10:56:41 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTMwOzA5OjE0OjU2IFBNOzI5Njg="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTA0LTA2OzEwOjU2OjQxIFBNOzE1OzMxMjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, l" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="True" size="101"/>
+            <assign variable="l" expression="101"/>
+            <for variable="i" start="0" end="100" direction="inc" step="1">
+                <assign variable="l" expression="l-1"/>
+                <assign variable="n[i]" expression="l"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

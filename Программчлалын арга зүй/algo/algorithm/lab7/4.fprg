@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-24 10:31:41 AM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTI0OzEyOjA4OjEyIEFNOzI5NDU="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTI0OzEwOjMxOjQxIEFNOzIzOzMxMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, k, v, s, p, b, o" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="k" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="o" expression="0"/>
+                <for variable="b" start="1" end="n" direction="inc" step="1">
+                    <if expression="n%b==0">
+                        <then>
+                            <assign variable="o" expression="o+b"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="o&gt;k">
+                    <then>
+                        <assign variable="k" expression="o"/>
+                        <assign variable="p" expression="n"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="n" expression="n-1"/>
+            </while>
+            <output expression="p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

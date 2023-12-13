@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-09 10:35:20 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA4OzExOjIzOjE3IFBNOzI5NjM="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTA5OzEwOjM1OjIwIFBNOzg7MzA3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="o, d, a, n" type="Integer" array="False" size=""/>
+            <input variable="o"/>
+            <input variable="d"/>
+            <input variable="a"/>
+            <input variable="n"/>
+            <if expression="n&gt;o*d*a">
+                <then>
+                    <output expression="&quot;iim toot bhgui&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="o" expression="(n-1)/(a*d)+1"/>
+                    <output expression="o" newline="True"/>
+                    <assign variable="d" expression="(((n-(o-1)*a*d-1))/a)+1"/>
+                    <output expression="d" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-19 10:17:53 PM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMTk7MTA6MDM6MzkgUE07MjUwNA=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMTk7MTA6MTc6NTMgUE07MTsyNjEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, a, b, c, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <if expression="99&lt;n &amp;&amp; n&lt;1000">
+                <then>
+                    <while expression="n-s&gt;0">
+                        <assign variable="a" expression="n%100"/>
+                        <assign variable="b" expression="a/10"/>
+                        <assign variable="c" expression="b%10"/>
+                        <assign variable="s" expression="b+a+c"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                    <output expression="i" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;buruu too&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

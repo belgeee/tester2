@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-16 04:03:47 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTA0LTE2OzAzOjU0OjA1IFBNOzI5NjU="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTA0LTE2OzA0OjAzOjQ3IFBNOzE7MzA3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, i, k" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="n%2==1">
+                <then>
+                    <assign variable="i" expression="1"/>
+                    <assign variable="s" expression="0"/>
+                    <assign variable="k" expression="2"/>
+                    <while expression="i&lt;n">
+                        <assign variable="s" expression="s+i/k"/>
+                        <assign variable="i" expression="i+2"/>
+                        <assign variable="s" expression="s+i/k"/>
+                        <assign variable="k" expression="k+2"/>
+                    </while>
+                    <output expression="s" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;buruu utga&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

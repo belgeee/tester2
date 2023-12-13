@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Swift 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 12:13:18 AM"/>
+        <attribute name="created" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0wOTsxMDo0NDoxMiBQTTszMDA2"/>
+        <attribute name="edited" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0xMDsxMjoxMzoxOCBBTTsxOzMwOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, n, i, a" type="Integer" array="False" size=""/>
+            <output expression="&quot;n toog otuulna uu&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="B" type="Integer" array="True" size="n"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="B[i]" expression="random(n)"/>
+            </for>
+            <assign variable="a" expression="n-1"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="s" expression="s+B[i]*B[a]"/>
+                <assign variable="a" expression="a-1"/>
+            </for>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-25 08:51:23 PM"/>
+        <attribute name="created" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjU7MDg6MDg6MzcgUE07MjUxMQ=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTAtMjU7MDg6NTE6MjMgUE07MTsyNjEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, l, n, f, d" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <input variable="n"/>
+            <if expression="n&gt;9">
+                <then>
+                    <assign variable="l" expression="n%10"/>
+                    <assign variable="d" expression="log10(n)"/>
+                    <assign variable="f" expression="n/(10^d)"/>
+                    <assign variable="s" expression="l*(10^d)"/>
+                    <assign variable="s" expression="s+(n%10^d)"/>
+                    <assign variable="s" expression="s-l+f"/>
+                    <output expression="s" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

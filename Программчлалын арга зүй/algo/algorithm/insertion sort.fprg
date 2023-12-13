@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-19 09:00:48 PM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTA0LTE5OzA4OjM1OjAyIFBNOzI5Njk="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTA0LTE5OzA5OjAwOjQ4IFBNOzE7MzA4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, k, t, j" type="Integer" array="False" size=""/>
+            <declare name="A" type="Integer" array="True" size="100"/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <input variable="A[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;n">
+                <assign variable="t" expression="A[i]"/>
+                <assign variable="j" expression="i-1"/>
+                <if expression="j&gt;=0">
+                    <then>
+                        <while expression="t&lt;=A[j]">
+                            <assign variable="A[j+1]" expression="A[j]"/>
+                            <assign variable="j" expression="j-1"/>
+                        </while>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="A[j+1]" expression="t"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

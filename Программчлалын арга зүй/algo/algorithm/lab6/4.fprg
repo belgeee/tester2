@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chukaa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-17 09:18:11 AM"/>
+        <attribute name="created" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTE2OzA2OjM1OjMzIFBNOzI5Njc="/>
+        <attribute name="edited" value="Y2h1a2FhO0RFU0tUT1AtTEozUE1GNzsyMDIyLTAzLTE3OzA5OjE4OjExIEFNOzMyOzMxMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;n">
+                <if expression="n%i==0">
+                    <then>
+                        <assign variable="s" expression="s+i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <if expression="n==s">
+                <then>
+                    <output expression="&quot;&#1090;&#1257;&#1075;&#1089; &#1090;&#1086;&#1086;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#1090;&#1257;&#1075;&#1089; &#1090;&#1086;&#1086; &#1073;&#1080;&#1096;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

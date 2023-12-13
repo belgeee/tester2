@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 12:19:39 PM"/>
+        <attribute name="created" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTI6MTY6MjYgUE07MjA0Ng=="/>
+        <attribute name="edited" value="bGFiMTc7TEFCLTE3OzIwMjItMDktMTU7MTI6MTk6MzkgUE07MTsyMTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="urjver, i, n" type="Integer" array="False" size=""/>
+            <assign variable="urjver" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <input variable="n"/>
+            <while expression="i&lt;=n">
+                <assign variable="urjver" expression="urjver*i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="urjver" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

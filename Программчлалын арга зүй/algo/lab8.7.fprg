@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Swift 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 11:56:20 AM"/>
+        <attribute name="created" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0xMDswMTozNzoxMyBBTTsyOTg2"/>
+        <attribute name="edited" value="U3dpZnQgMztMQVBUT1AtTFBFUFZIUkc7MjAyMi0xMS0xMDswOTowODo0OCBBTTsyOzMxMDk="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC02QktFOVM4OzIwMjItMTEtMTA7MTE6NTY6MjAgQU07MTsyNTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, b" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="A" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="A[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="b" start="0" end="n-1" direction="inc" step="1">
+                    <if expression="i==b">
+                        <then/>
+                        <else>
+                            <if expression="A[i]==A[b]">
+                                <then>
+                                    <output expression="A[b]" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
